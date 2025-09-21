@@ -299,7 +299,7 @@ export default function StartForm() {
           {/* Form footer */}
           <div className="mt-6">
             <div className="mb-4">
-              <Link href="/steps-01" className="btn w-full bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white cursor-pointer">Send Payment</Link>
+              <Link href="/steps-02" className="btn w-full bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white cursor-pointer">Send Payment</Link>
             </div>
             <div className="text-xs text-gray-500 italic text-center">Payment arrives in {getDeliveryTime()}</div>
             

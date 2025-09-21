@@ -30,7 +30,7 @@ export default function UsersTiles() {
       image: Image01,
       link: '#0',
       location: '🇮🇹',
-      content: 'Fitness Fanatic, Design Enthusiast, Mentor, Meetup Organizer & PHP Lover.',
+      content: 'Fitness Fanatic, Design Enthusiast, Mentor, Meetup Organizer & PHP Lover.', 
     },
     {
       id: 1,
