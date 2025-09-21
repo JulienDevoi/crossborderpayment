@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Faqs - Mosaic',
-  description: 'Page description',
+  title: 'Payment FAQs - Mosaic',
+  description: 'Frequently asked questions about our payment system',
 }
 
 export default function Faqs() {
@@ -12,7 +12,7 @@ export default function Faqs() {
 
           {/* Page title */}
           <div className="mb-5">
-            <h1 className="text-2xl md:text-3xl text-gray-800 dark:text-gray-100 font-bold">👋 How we can help you today?</h1>
+            <h1 className="text-2xl md:text-3xl text-gray-800 dark:text-gray-100 font-bold">💳 Payment Questions & Answers</h1>
           </div>
 
           {/* Search form */}
@@ -36,13 +36,13 @@ export default function Faqs() {
                 <a className="text-violet-500 whitespace-nowrap" href="#0">Popular</a>
               </li>
               <li className="pb-3 mr-6 last:mr-0 first:pl-4 sm:first:pl-6 lg:first:pl-8 last:pr-4 sm:last:pr-6 lg:last:pr-8">
-                <a className="text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 whitespace-nowrap" href="#0">Accessibility</a>
+                <a className="text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 whitespace-nowrap" href="#0">Security</a>
               </li>
               <li className="pb-3 mr-6 last:mr-0 first:pl-4 sm:first:pl-6 lg:first:pl-8 last:pr-4 sm:last:pr-6 lg:last:pr-8">
-                <a className="text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 whitespace-nowrap" href="#0">Marketing</a>
+                <a className="text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 whitespace-nowrap" href="#0">Transactions</a>
               </li>
               <li className="pb-3 mr-6 last:mr-0 first:pl-4 sm:first:pl-6 lg:first:pl-8 last:pr-4 sm:last:pr-6 lg:last:pr-8">
-                <a className="text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 whitespace-nowrap" href="#0">Development</a>
+                <a className="text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 whitespace-nowrap" href="#0">Integration</a>
               </li>
               <li className="pb-3 mr-6 last:mr-0 first:pl-4 sm:first:pl-6 lg:first:pl-8 last:pr-4 sm:last:pr-6 lg:last:pr-8">
                 <a className="text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 whitespace-nowrap" href="#0">Account</a>
@@ -62,7 +62,7 @@ export default function Faqs() {
                     <path className="text-violet-500" d="M15 1H7c-.6 0-1 .4-1 1v11c0 .7-.2 1.4-.6 2H13c1.7 0 3-1.3 3-3V2c0-.6-.4-1-1-1z" />
                   </svg>
                 </div>
-                <h3 className="text-xl leading-snug text-gray-800 dark:text-gray-100 font-bold">How can the widget to my website?</h3>
+                <h3 className="text-xl leading-snug text-gray-800 dark:text-gray-100 font-bold">How can I integrate payment processing into my website?</h3>
               </header>
               <div className="pl-7">
                 <div className="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco.</div>
@@ -85,7 +85,7 @@ export default function Faqs() {
                     <path className="text-violet-500" d="M15 1H7c-.6 0-1 .4-1 1v11c0 .7-.2 1.4-.6 2H13c1.7 0 3-1.3 3-3V2c0-.6-.4-1-1-1z" />
                   </svg>
                 </div>
-                <h3 className="text-xl leading-snug text-gray-800 dark:text-gray-100 font-bold">What would happen if I choose not to pay after the usage?</h3>
+                <h3 className="text-xl leading-snug text-gray-800 dark:text-gray-100 font-bold">What happens if a payment fails or is declined?</h3>
               </header>
               <div className="pl-7">
                 <div className="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco.</div>
@@ -94,7 +94,7 @@ export default function Faqs() {
                     <a className="text-sm font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">Development</a>
                   </li>
                   <li className="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                    <a className="text-sm font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">Acessibility</a>
+                    <a className="text-sm font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">Transactions</a>
                   </li>
                 </ul>
               </div>
@@ -108,7 +108,7 @@ export default function Faqs() {
                     <path className="text-violet-500" d="M15 1H7c-.6 0-1 .4-1 1v11c0 .7-.2 1.4-.6 2H13c1.7 0 3-1.3 3-3V2c0-.6-.4-1-1-1z" />
                   </svg>
                 </div>
-                <h3 className="text-xl leading-snug text-gray-800 dark:text-gray-100 font-bold">What limitations do trial accounts have?</h3>
+                <h3 className="text-xl leading-snug text-gray-800 dark:text-gray-100 font-bold">What are the transaction limits for my account?</h3>
               </header>
               <div className="pl-7">
                 <div className="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco.</div>
@@ -131,7 +131,7 @@ export default function Faqs() {
                     <path className="text-violet-500" d="M15 1H7c-.6 0-1 .4-1 1v11c0 .7-.2 1.4-.6 2H13c1.7 0 3-1.3 3-3V2c0-.6-.4-1-1-1z" />
                   </svg>
                 </div>
-                <h3 className="text-xl leading-snug text-gray-800 dark:text-gray-100 font-bold">Is there any difference between Standard and Plus licenses?</h3>
+                <h3 className="text-xl leading-snug text-gray-800 dark:text-gray-100 font-bold">What's the difference between our payment plans?</h3>
               </header>
               <div className="pl-7">
                 <div className="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco.</div>
@@ -154,7 +154,7 @@ export default function Faqs() {
                     <path className="text-violet-500" d="M15 1H7c-.6 0-1 .4-1 1v11c0 .7-.2 1.4-.6 2H13c1.7 0 3-1.3 3-3V2c0-.6-.4-1-1-1z" />
                   </svg>
                 </div>
-                <h3 className="text-xl leading-snug text-gray-800 dark:text-gray-100 font-bold">Is my personal information protected?</h3>
+                <h3 className="text-xl leading-snug text-gray-800 dark:text-gray-100 font-bold">How secure are my payment details?</h3>
               </header>
               <div className="pl-7">
                 <div className="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco.</div>
@@ -163,7 +163,7 @@ export default function Faqs() {
                     <a className="text-sm font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">General</a>
                   </li>
                   <li className="flex items-center after:block after:content-['·'] last:after:content-[''] after:text-sm after:text-gray-400 dark:after:text-gray-600 after:px-2">
-                    <a className="text-sm font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">Accessibility</a>
+                    <a className="text-sm font-medium text-violet-500 hover:text-violet-600 dark:hover:text-violet-400" href="#0">Compliance</a>
                   </li>
                 </ul>
               </div>
@@ -177,7 +177,7 @@ export default function Faqs() {
                     <path className="text-violet-500" d="M15 1H7c-.6 0-1 .4-1 1v11c0 .7-.2 1.4-.6 2H13c1.7 0 3-1.3 3-3V2c0-.6-.4-1-1-1z" />
                   </svg>
                 </div>
-                <h3 className="text-xl leading-snug text-gray-800 dark:text-gray-100 font-bold">What can I create with with this product?</h3>
+                <h3 className="text-xl leading-snug text-gray-800 dark:text-gray-100 font-bold">What payment methods do you support?</h3>
               </header>
               <div className="pl-7">
                 <div className="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco.</div>

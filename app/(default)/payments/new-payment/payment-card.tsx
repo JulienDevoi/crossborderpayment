@@ -19,7 +19,7 @@ export default function PaymentCard({ paymentOption }: { paymentOption: PaymentO
           {/* Icon + name */}
           <header>
             <div className="flex justify-center mb-4">
-              <div className="relative inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-violet-500 to-purple-500 rounded-full">
+              <div className="relative inline-flex items-center justify-center w-16 h-16 bg-gray-100 dark:bg-gray-700 rounded-full">
                 <span className="text-2xl">{paymentOption.location}</span>
               </div>
             </div>

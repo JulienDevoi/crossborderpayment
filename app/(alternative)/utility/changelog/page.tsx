@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Roadmap - Mosaic',
-  description: 'Page description',
+  title: 'Payment Updates - Mosaic',
+  description: 'Latest updates and improvements to our payment system',
 }
 
 import Image from 'next/image'
@@ -18,14 +18,14 @@ export default function Roadmap() {
 
         {/* Left: Title */}
         <div className="mb-4 sm:mb-0">
-          <h1 className="text-2xl md:text-3xl text-gray-800 dark:text-gray-100 font-bold">Changelog</h1>
+          <h1 className="text-2xl md:text-3xl text-gray-800 dark:text-gray-100 font-bold">Payment Updates</h1>
         </div>
 
         {/* Right: Actions */}
         <div className="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
 
           {/* Add entry button */}
-          <button className="btn bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white">Add Entry</button>
+          <button className="btn bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white">Add Update</button>
 
         </div>
 
@@ -41,16 +41,16 @@ export default function Roadmap() {
                 <button className="inline-flex items-center justify-center text-sm font-medium leading-5 rounded-full px-3 py-1 border border-transparent shadow-sm bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-800 transition">View All</button>
               </li>
               <li className="m-1">
-                <button className="inline-flex items-center justify-center text-sm font-medium leading-5 rounded-full px-3 py-1 border border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 shadow-sm bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 transition">Announcements</button>
+                <button className="inline-flex items-center justify-center text-sm font-medium leading-5 rounded-full px-3 py-1 border border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 shadow-sm bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 transition">Security</button>
               </li>
               <li className="m-1">
                 <button className="inline-flex items-center justify-center text-sm font-medium leading-5 rounded-full px-3 py-1 border border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 shadow-sm bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 transition">Bug Fix</button>
               </li>
               <li className="m-1">
-                <button className="inline-flex items-center justify-center text-sm font-medium leading-5 rounded-full px-3 py-1 border border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 shadow-sm bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 transition">Product</button>
+                <button className="inline-flex items-center justify-center text-sm font-medium leading-5 rounded-full px-3 py-1 border border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 shadow-sm bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 transition">Features</button>
               </li>
               <li className="m-1">
-                <button className="inline-flex items-center justify-center text-sm font-medium leading-5 rounded-full px-3 py-1 border border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 shadow-sm bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 transition">Exciting News</button>
+                <button className="inline-flex items-center justify-center text-sm font-medium leading-5 rounded-full px-3 py-1 border border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 shadow-sm bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 transition">API Updates</button>
               </li>
             </ul>
           </div>
@@ -65,7 +65,7 @@ export default function Roadmap() {
                 </div>
                 <div className="grow pb-6 border-b border-gray-200 dark:border-gray-700/60">
                   <header>
-                    <h2 className="text-2xl text-gray-800 dark:text-gray-100 font-bold mb-3">Released version 2.0</h2>
+                    <h2 className="text-2xl text-gray-800 dark:text-gray-100 font-bold mb-3">Enhanced Payment Security v2.1</h2>
                     <div className="flex flex-nowrap items-center space-x-2 mb-4">
                       <div className="flex items-center">
                         <a className="block mr-2 shrink-0" href="#0">
@@ -77,7 +77,7 @@ export default function Roadmap() {
                       </div>
                       <div className="text-gray-400 dark:text-gray-600">·</div>
                       <div>
-                        <div className="text-xs inline-flex font-medium bg-green-500/20 text-green-700 rounded-full text-center px-2.5 py-1">Product</div>
+                        <div className="text-xs inline-flex font-medium bg-green-500/20 text-green-700 rounded-full text-center px-2.5 py-1">Security</div>
                       </div>
                     </div>
                   </header>
@@ -96,7 +96,7 @@ export default function Roadmap() {
                 </div>
                 <div className="grow pb-6 border-b border-gray-200 dark:border-gray-700/60">
                   <header>
-                    <h2 className="text-2xl text-gray-800 dark:text-gray-100 font-bold mb-3">Feature Name is now public 🎉</h2>
+                    <h2 className="text-2xl text-gray-800 dark:text-gray-100 font-bold mb-3">Instant Payment Processing is now live 🎉</h2>
                     <div className="flex flex-nowrap items-center space-x-2 mb-4">
                       <div className="flex items-center">
                         <a className="block mr-2 shrink-0" href="#0">
@@ -108,13 +108,13 @@ export default function Roadmap() {
                       </div>
                       <div className="text-gray-400 dark:text-gray-600">·</div>
                       <div>
-                        <div className="text-xs inline-flex font-medium bg-yellow-500/20 text-yellow-700 rounded-full text-center px-2.5 py-1">Announcement</div>
+                        <div className="text-xs inline-flex font-medium bg-yellow-500/20 text-yellow-700 rounded-full text-center px-2.5 py-1">Features</div>
                       </div>
                     </div>
                   </header>
                   <div className="space-y-3">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.</p>
+                    <p>Our new instant payment processing feature is now available to all users. Payments are now processed in real-time with immediate confirmation, reducing wait times from minutes to seconds.</p>
+                    <p>This enhancement includes support for instant bank transfers, real-time payment notifications, and immediate balance updates across all connected accounts.</p>
                   </div>
                 </div>
               </div>
@@ -127,7 +127,7 @@ export default function Roadmap() {
                 </div>
                 <div className="grow pb-6 border-b border-gray-200 dark:border-gray-700/60">
                   <header>
-                    <h2 className="text-2xl text-gray-800 dark:text-gray-100 font-bold mb-3">Bugs fixed, issues, and more</h2>
+                    <h2 className="text-2xl text-gray-800 dark:text-gray-100 font-bold mb-3">Payment Gateway Improvements</h2>
                     <div className="flex flex-nowrap items-center space-x-2 mb-4">
                       <div className="flex items-center">
                         <a className="block mr-2 shrink-0" href="#0">
@@ -147,10 +147,10 @@ export default function Roadmap() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.</p>
                     <ul className="list-disc list-inside space-y-1">
-                      <li>E-commerce: Better lorem ipsum generator.</li>
-                      <li>Booking: Lorem ipsum post generator.</li>
-                      <li>Retail: Better lorem ipsum generator.</li>
-                      <li>Services: Better lorem ipsum generator.</li>
+                      <li>Payment Gateway: Improved transaction success rates by 15%.</li>
+                      <li>Mobile Payments: Enhanced mobile payment experience and faster processing.</li>
+                      <li>International: Added support for 12 new currencies and payment methods.</li>
+                      <li>API: Better error handling and response times for payment API calls.</li>
                     </ul>
                   </div>
                 </div>
@@ -164,7 +164,7 @@ export default function Roadmap() {
                 </div>
                 <div className="grow pb-6 border-b border-gray-200 dark:border-gray-700/60">
                   <header>
-                    <h2 className="text-2xl text-gray-800 dark:text-gray-100 font-bold mb-3">Thanks, everyone 🙌</h2>
+                    <h2 className="text-2xl text-gray-800 dark:text-gray-100 font-bold mb-3">Payment Dashboard Redesign 🙌</h2>
                     <div className="flex flex-nowrap items-center space-x-2 mb-4">
                       <div className="flex items-center">
                         <a className="block mr-2 shrink-0" href="#0">
@@ -176,13 +176,13 @@ export default function Roadmap() {
                       </div>
                       <div className="text-gray-400 dark:text-gray-600">·</div>
                       <div>
-                        <div className="text-xs inline-flex font-medium bg-sky-500/20 text-sky-700 rounded-full text-center px-2.5 py-1">Exciting News</div>
+                        <div className="text-xs inline-flex font-medium bg-sky-500/20 text-sky-700 rounded-full text-center px-2.5 py-1">UI/UX</div>
                       </div>
                     </div>
                   </header>
                   <div className="space-y-3">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.</p>
+                    <p>We've completely redesigned our payment dashboard with a focus on user experience and accessibility. The new interface features improved navigation, clearer transaction history, and enhanced mobile responsiveness.</p>
+                    <p>Users can now enjoy faster load times, better data visualization, and streamlined workflows for managing their payment activities and account settings.</p>
                   </div>
                 </div>
               </div>

@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Roadmap - Mosaic',
-  description: 'Page description',
+  title: 'Payment Roadmap - Mosaic',
+  description: 'Our payment platform development roadmap and upcoming features',
 }
 
 import Image from 'next/image'
@@ -21,14 +21,14 @@ export default function Roadmap() {
 
         {/* Left: Title */}
         <div className="mb-4 sm:mb-0">
-          <h1 className="text-2xl md:text-3xl text-gray-800 dark:text-gray-100 font-bold">Roadmap</h1>
+          <h1 className="text-2xl md:text-3xl text-gray-800 dark:text-gray-100 font-bold">Payment Roadmap</h1>
         </div>
 
         {/* Right: Actions */}
         <div className="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
 
           {/* Add event button */}
-          <button className="btn bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white">Add Event</button>
+          <button className="btn bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white">Add Milestone</button>
 
         </div>
 
@@ -81,9 +81,9 @@ export default function Roadmap() {
                             <path d="M14.4 8.4L13 7l-4 4-2-2-1.4 1.4L9 13.8z" />
                           </svg>
                         </div>
-                        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 pl-9">Product V1 - Early Access</h3>
+                        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 pl-9">Payment Gateway V1 - Launch</h3>
                       </div>
-                      <div className="pl-9">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                      <div className="pl-9">Advanced payment processing capabilities with enhanced security and user experience improvements.</div>
                     </li>
                     {/* List item */}
                     <li className="relative py-2">
@@ -94,9 +94,9 @@ export default function Roadmap() {
                             <path d="M14.4 8.4L13 7l-4 4-2-2-1.4 1.4L9 13.8z" />
                           </svg>
                         </div>
-                        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 pl-9">Web3 Compatibility</h3>
+                        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 pl-9">Cryptocurrency Payment Support</h3>
                       </div>
-                      <div className="pl-9">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                      <div className="pl-9">Advanced payment processing capabilities with enhanced security and user experience improvements.</div>
                     </li>
                     {/* List item */}
                     <li className="relative py-2">
@@ -107,9 +107,9 @@ export default function Roadmap() {
                             <path d="M14.4 8.4L13 7l-4 4-2-2-1.4 1.4L9 13.8z" />
                           </svg>
                         </div>
-                        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 pl-9">Proof-of-Funds Compliance Key</h3>
+                        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 pl-9">Enhanced Security & Compliance</h3>
                       </div>
-                      <div className="pl-9">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                      <div className="pl-9">Advanced payment processing capabilities with enhanced security and user experience improvements.</div>
                     </li>
                     {/* List item */}
                     <li className="relative py-2">
@@ -119,9 +119,9 @@ export default function Roadmap() {
                             <path d="M14.4 8.4L13 7l-4 4-2-2-1.4 1.4L9 13.8z" />
                           </svg>
                         </div>
-                        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 pl-9">Activity Feed Integration</h3>
+                        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 pl-9">Real-time Transaction Monitoring</h3>
                       </div>
-                      <div className="pl-9">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                      <div className="pl-9">Advanced payment processing capabilities with enhanced security and user experience improvements.</div>
                     </li>
                   </ul>
                 </div>
@@ -166,9 +166,9 @@ export default function Roadmap() {
                             <path d="M14.4 8.4L13 7l-4 4-2-2-1.4 1.4L9 13.8z" />
                           </svg>
                         </div>
-                        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 pl-9">Product V1 - Early Access</h3>
+                        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 pl-9">Payment Gateway V1 - Launch</h3>
                       </div>
-                      <div className="pl-9">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                      <div className="pl-9">Advanced payment processing capabilities with enhanced security and user experience improvements.</div>
                     </li>
                     {/* List item */}
                     <li className="relative py-2">
@@ -179,9 +179,9 @@ export default function Roadmap() {
                             <path d="M14.4 8.4L13 7l-4 4-2-2-1.4 1.4L9 13.8z" />
                           </svg>
                         </div>
-                        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 pl-9">Web3 Compatibility</h3>
+                        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 pl-9">Cryptocurrency Payment Support</h3>
                       </div>
-                      <div className="pl-9">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                      <div className="pl-9">Advanced payment processing capabilities with enhanced security and user experience improvements.</div>
                     </li>
                     {/* List item */}
                     <li className="relative py-2">
@@ -192,9 +192,9 @@ export default function Roadmap() {
                             <path d="M14.4 8.4L13 7l-4 4-2-2-1.4 1.4L9 13.8z" />
                           </svg>
                         </div>
-                        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 pl-9">Proof-of-Funds Compliance Key</h3>
+                        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 pl-9">Enhanced Security & Compliance</h3>
                       </div>
-                      <div className="pl-9">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                      <div className="pl-9">Advanced payment processing capabilities with enhanced security and user experience improvements.</div>
                     </li>
                     {/* List item */}
                     <li className="relative py-2">
@@ -204,9 +204,9 @@ export default function Roadmap() {
                             <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10-4.477 10-10 10z" />
                           </svg>
                         </div>
-                        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 pl-9">Activity Feed Integration</h3>
+                        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 pl-9">Real-time Transaction Monitoring</h3>
                       </div>
-                      <div className="pl-9">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                      <div className="pl-9">Advanced payment processing capabilities with enhanced security and user experience improvements.</div>
                     </li>
                   </ul>
                 </div>
@@ -251,9 +251,9 @@ export default function Roadmap() {
                             <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10-4.477 10-10 10z" />
                           </svg>
                         </div>
-                        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 pl-9">Product V1 - Early Access</h3>
+                        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 pl-9">Payment Gateway V1 - Launch</h3>
                       </div>
-                      <div className="pl-9">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                      <div className="pl-9">Advanced payment processing capabilities with enhanced security and user experience improvements.</div>
                     </li>
                     {/* List item */}
                     <li className="relative py-2">
@@ -263,9 +263,9 @@ export default function Roadmap() {
                             <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10-4.477 10-10 10z" />
                           </svg>
                         </div>
-                        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 pl-9">Web3 Compatibility</h3>
+                        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 pl-9">Cryptocurrency Payment Support</h3>
                       </div>
-                      <div className="pl-9">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                      <div className="pl-9">Advanced payment processing capabilities with enhanced security and user experience improvements.</div>
                     </li>
                   </ul>
                 </div>
@@ -307,9 +307,9 @@ export default function Roadmap() {
                             <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10-4.477 10-10 10z" />
                           </svg>
                         </div>
-                        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 pl-9">Product V1 - Early Access</h3>
+                        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 pl-9">Payment Gateway V1 - Launch</h3>
                       </div>
-                      <div className="pl-9">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                      <div className="pl-9">Advanced payment processing capabilities with enhanced security and user experience improvements.</div>
                     </li>
                     {/* List item */}
                     <li className="relative py-2">
@@ -319,9 +319,9 @@ export default function Roadmap() {
                             <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10-4.477 10-10 10z" />
                           </svg>
                         </div>
-                        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 pl-9">Web3 Compatibility</h3>
+                        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 pl-9">Cryptocurrency Payment Support</h3>
                       </div>
-                      <div className="pl-9">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                      <div className="pl-9">Advanced payment processing capabilities with enhanced security and user experience improvements.</div>
                     </li>
                   </ul>
                 </div>

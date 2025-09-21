@@ -1,8 +1,8 @@
 // This is just a demo page, look for the not-found.js file in the app directory. 
 
 export const metadata = {
-  title: 'Page Not Found - Mosaic',
-  description: 'Page description',
+  title: 'Payment Not Found - Mosaic',
+  description: 'The requested payment or transaction could not be found',
 }
 
 import Link from 'next/link'
@@ -22,8 +22,8 @@ export default function PageNotFound() {
               <Image className="dark:hidden" src={NotFoundImage} width={176} height={176} alt="404 illustration" />
               <Image className="hidden dark:block" src={NotFoundImageDark} width={176} height={176} alt="404 illustration dark" />    
             </div>
-            <div className="mb-6">Hmm...this page doesn't exist. Try searching for something else!</div>
-            <Link href="/" className="btn bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white">Back To Dashboard</Link>
+            <div className="mb-6">Hmm...this payment or transaction doesn't exist. Please check your payment ID or try searching for a different transaction!</div>
+            <Link href="/" className="btn bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white">Back To Payment Dashboard</Link>
           </div>
 
         </div>
