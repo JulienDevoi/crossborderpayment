@@ -28,10 +28,10 @@ export default function NewPayment() {
       id: 1,
       name: 'Batch Pay',
       image: Image02,
-      link: '#0',
+      link: '/batch-pay-02',
       location: '💵',
       content: 'Makes hundreds of payments at once.',
-      comingSoon: true,
+      comingSoon: false,
     },
     {
       id: 2,
