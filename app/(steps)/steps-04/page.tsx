@@ -111,7 +111,7 @@ export default function Steps04() {
                   </button>
                   <Link 
                     className="text-sm underline hover:no-underline text-center text-gray-600 dark:text-gray-400" 
-                    href="/dashboard"
+                    href="/payments/list"
                   >
                     ← Back to Dashboard
                   </Link>

@@ -3,185 +3,188 @@ export const metadata = {
   description: 'View and manage your payments',
 }
 
+import Link from 'next/link'
 import { SelectedItemsProvider } from '@/app/selected-items-context'
-import SearchForm from '@/components/search-form'
+import { FlyoutProvider } from '@/app/flyout-context'
+import { TransactionDetailProvider } from './transaction-context'
 import DeleteButton from '@/components/delete-button'
-import DateSelect from '@/components/date-select'
-import FilterButton from '@/components/dropdown-filter'
+import SearchForm from '@/components/search-form'
+import TransactionDropdown from './transaction-dropdown'
 import PaymentsTable from './payments-table'
 import PaginationClassic from '@/components/pagination-classic'
+import TransactionPanel from './transaction-panel'
+
+import Image01 from '@/public/images/transactions-image-01.svg'
+import Image02 from '@/public/images/transactions-image-02.svg'
+import Image03 from '@/public/images/user-36-05.jpg'
+import Image04 from '@/public/images/transactions-image-03.svg'
+import Image05 from '@/public/images/transactions-image-04.svg'
+import Image06 from '@/public/images/transactions-image-05.svg'
+import Image07 from '@/public/images/transactions-image-06.svg'
+import Image08 from '@/public/images/transactions-image-07.svg'
+import Image09 from '@/public/images/transactions-image-08.svg'
 
 function PaymentsContent() {
 
-  // Some dummy payments data
-  const payments = [
+  // Some dummy transactions data (adapted for payments)
+  const transactions = [
     {
       id: 0,
-      payment: '#PAY123567',
-      total: '$129.00',
-      status: 'Completed',
-      recipient: 'John Smith',
-      sentdate: '22/07/2024',
-      completeddate: '22/07/2024',
-      type: 'One-time',
+      image: Image01,
+      name: 'Form Builder CP',
+      date: '22/01/2024',
+      status: 'Pending',
+      amount: '-$1,299.22',
     },
     {
       id: 1,
-      payment: '#PAY779912',
-      total: '$59.00',
-      status: 'Pending',
-      recipient: 'Sarah Johnson',
-      sentdate: '19/07/2024',
-      completeddate: '-',
-      type: 'Recurring',
+      image: Image02,
+      name: 'Imperial Hotel ****',
+      date: '22/01/2024',
+      status: 'Completed',
+      amount: '-$1,029.77',
     },
     {
       id: 2,
-      payment: '#PAY889924',
-      total: '$89.00',
-      status: 'Completed',
-      recipient: 'Michael Brown',
-      sentdate: '17/07/2024',
-      completeddate: '19/07/2024',
-      type: 'One-time',
+      image: Image03,
+      name: 'Aprilynne Pills',
+      date: '22/01/2024',
+      status: 'Pending',
+      amount: '+$499.99',
     },
     {
       id: 3,
-      payment: '#PAY897726',
-      total: '$129.00',
-      status: 'Failed',
-      recipient: 'Emily Davis',
-      sentdate: '04/07/2024',
-      completeddate: '-',
-      type: 'Batch',
+      image: Image04,
+      name: 'Google Limited UK',
+      date: '22/01/2024',
+      status: 'Completed',
+      amount: '-$1,029.77',
     },
     {
       id: 4,
-      payment: '#PAY123568',
-      total: '$75.00',
-      status: 'Completed',
-      recipient: 'David Wilson',
-      sentdate: '04/07/2024',
-      completeddate: '04/07/2024',
-      type: 'One-time',
+      image: Image05,
+      name: 'Acme LTD UK',
+      date: '22/01/2024',
+      status: 'Pending',
+      amount: '+$2,179.36',
     },
     {
       id: 5,
-      payment: '#PAY896644',
-      total: '$200.00',
-      status: 'Completed',
-      recipient: 'Lisa Anderson',
-      sentdate: '04/07/2024',
-      completeddate: '09/07/2024',
-      type: 'Batch',
+      image: Image04,
+      name: 'Google Limited UK',
+      date: '22/01/2024',
+      status: 'Canceled',
+      amount: '-$1,029.77',
     },
     {
       id: 6,
-      payment: '#PAY136988',
-      total: '$69.00',
+      image: Image06,
+      name: 'Uber',
+      date: '22/01/2024',
       status: 'Completed',
-      recipient: 'James Taylor',
-      sentdate: '01/07/2024',
-      completeddate: '01/07/2024',
-      type: 'One-time',
+      amount: '-$272.88',
     },
     {
       id: 7,
-      payment: '#PAY442206',
-      total: '$129.00',
-      status: 'Pending',
-      recipient: 'Maria Garcia',
-      sentdate: '22/06/2024',
-      completeddate: '-',
-      type: 'Recurring',
+      image: Image07,
+      name: 'PublicOne Inc.',
+      date: '22/01/2024',
+      status: 'Completed',
+      amount: '-$199.87',
     },
     {
       id: 8,
-      payment: '#PAY764321',
-      total: '$89.00',
+      image: Image08,
+      name: 'Github Inc.',
+      date: '22/01/2024',
       status: 'Completed',
-      recipient: 'Robert Martinez',
-      sentdate: '21/06/2024',
-      completeddate: '29/06/2024',
-      type: 'One-time',
+      amount: '-$42.87',
     },
     {
       id: 9,
-      payment: '#PAY908764',
-      total: '$129.00',
-      status: 'Failed',
-      recipient: 'Jennifer Lee',
-      sentdate: '17/06/2024',
-      completeddate: '-',
-      type: 'Batch',
-    }
+      image: Image09,
+      name: 'Form Builder PRO',
+      date: '22/01/2024',
+      status: 'Completed',
+      amount: '-$112.44',
+    },
   ]
 
   return (
-    <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-[96rem] mx-auto">
-      {/* Page header */}
-      <div className="sm:flex sm:justify-between sm:items-center mb-5">
+    <div className="relative bg-white dark:bg-gray-900 h-full">
+      <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-[96rem] mx-auto">
+        {/* Page header */}
+        <div className="sm:flex sm:justify-between sm:items-center mb-4 md:mb-2">
 
-        {/* Left: Title */}
-        <div className="mb-4 sm:mb-0">
-          <h1 className="text-2xl md:text-3xl text-gray-800 dark:text-gray-100 font-bold">My Payments</h1>
+          {/* Left: Title */}
+          <div className="mb-4 sm:mb-0">
+            <h1 className="text-2xl md:text-3xl text-gray-800 dark:text-gray-100 font-bold">My Payments</h1>
+          </div>
+
+          {/* Right: Actions */}
+          <div className="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
+
+            {/* Delete button */}
+            <DeleteButton />
+
+            {/* Search form */}
+            <div className="hidden sm:block">
+              <SearchForm />
+            </div>
+
+            {/* New Payment button */}
+            <Link href="/payments/new-payment" className="btn bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white">
+              <svg className="fill-current shrink-0 xs:hidden" width="16" height="16" viewBox="0 0 16 16">
+                <path d="M15 7H9V1c0-.6-.4-1-1-1S7 .4 7 1v6H1c-.6 0-1 .4-1 1s.4 1 1 1h6v6c0 .6.4 1 1 1s1-.4 1-1V9h6c.6 0 1-.4 1-1s-.4-1-1-1z" />
+              </svg>
+              <span className="max-xs:sr-only">New Payment</span>
+            </Link>
+
+          </div>
+
         </div>
 
-        {/* Right: Actions */}
-        <div className="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
-          {/* Search form */}
-          <SearchForm placeholder="Search by payment ID…" />
-          {/* Create payment button */}
-          <button className="btn bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white">
-            <svg className="fill-current shrink-0 xs:hidden" width="16" height="16" viewBox="0 0 16 16">
-              <path d="M15 7H9V1c0-.6-.4-1-1-1S7 .4 7 1v6H1c-.6 0-1 .4-1 1s.4 1 1 1h6v6c0 .6.4 1 1 1s1-.4 1-1V9h6c.6 0 1-.4 1-1s-.4-1-1-1z" />
-            </svg>
-            <span className="max-xs:sr-only">New Payment</span>
-          </button>
+        <div className="mb-5">
+          <span>Transactions from </span>
+          <TransactionDropdown />
         </div>
 
-      </div>
-
-      {/* More actions */}
-      <div className="sm:flex sm:justify-between sm:items-center mb-5">
-
-        {/* Left side */}
-        <div className="mb-4 sm:mb-0">
+        {/* Filters */}
+        <div className="mb-5">
           <ul className="flex flex-wrap -m-1">
             <li className="m-1">
-              <button className="inline-flex items-center justify-center text-sm font-medium leading-5 rounded-full px-3 py-1 border border-transparent shadow-sm bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-800 transition">All <span className="ml-1 text-gray-400 dark:text-gray-500">67</span></button>
+              <button className="inline-flex items-center justify-center text-sm font-medium leading-5 rounded-full px-3 py-1 border border-transparent shadow-sm bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-800 transition">
+                View All
+              </button>
             </li>
             <li className="m-1">
-              <button className="inline-flex items-center justify-center text-sm font-medium leading-5 rounded-full px-3 py-1 border border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 shadow-sm bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 transition">Completed <span className="ml-1 text-gray-400 dark:text-gray-500">42</span></button>
+              <button className="inline-flex items-center justify-center text-sm font-medium leading-5 rounded-full px-3 py-1 border border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 shadow-sm bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 transition">
+                Completed
+              </button>
             </li>
             <li className="m-1">
-              <button className="inline-flex items-center justify-center text-sm font-medium leading-5 rounded-full px-3 py-1 border border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 shadow-sm bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 transition">Pending <span className="ml-1 text-gray-400 dark:text-gray-500">15</span></button>
+              <button className="inline-flex items-center justify-center text-sm font-medium leading-5 rounded-full px-3 py-1 border border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 shadow-sm bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 transition">
+                Pending
+              </button>
             </li>
             <li className="m-1">
-              <button className="inline-flex items-center justify-center text-sm font-medium leading-5 rounded-full px-3 py-1 border border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 shadow-sm bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 transition">Failed <span className="ml-1 text-gray-400 dark:text-gray-500">10</span></button>
+              <button className="inline-flex items-center justify-center text-sm font-medium leading-5 rounded-full px-3 py-1 border border-gray-200 dark:border-gray-700/60 hover:border-gray-300 dark:hover:border-gray-600 shadow-sm bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 transition">
+                Canceled
+              </button>
             </li>
           </ul>
-        </div>
+        </div>        
 
-        {/* Right side */}
-        <div className="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
-          {/* Delete button */}
-          <DeleteButton />
-          {/* Dropdown */}
-          <DateSelect />
-          {/* Filter button */}
-          <FilterButton align="right" />
-        </div>
+        {/* Table */}
+        <PaymentsTable transactions={transactions} />
 
-      </div>      
+        {/* Pagination */}
+        <div className="mt-8">
+          <PaginationClassic />
+        </div>    
+      </div>
 
-      {/* Table */}
-      <PaymentsTable payments={payments} />
-
-      {/* Pagination */}
-      <div className="mt-8">
-        <PaginationClassic />
-      </div>    
+      <TransactionPanel />
     </div>
   )
 }
@@ -189,7 +192,11 @@ function PaymentsContent() {
 export default function Payments() {
   return (
     <SelectedItemsProvider>
-      <PaymentsContent />
+      <FlyoutProvider>
+        <TransactionDetailProvider>
+          <PaymentsContent />
+        </TransactionDetailProvider>
+      </FlyoutProvider>
     </SelectedItemsProvider>
   )
 }

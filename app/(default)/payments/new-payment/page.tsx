@@ -3,6 +3,7 @@ export const metadata = {
   description: 'Create a new payment',
 }
 
+import Link from 'next/link'
 import SearchForm from '@/components/search-form'
 import PaymentCard from './payment-card'
 
@@ -21,6 +22,7 @@ export default function NewPayment() {
       link: '/start',
       location: '💰',
       content: 'The best way to send money overseas.',
+      comingSoon: false,
     },
     {
       id: 1,
@@ -29,6 +31,7 @@ export default function NewPayment() {
       link: '#0',
       location: '💵',
       content: 'Makes hundreds of payments at once.',
+      comingSoon: true,
     },
     {
       id: 2,
@@ -37,6 +40,7 @@ export default function NewPayment() {
       link: '#0',
       location: '📱',
       content: 'Setup a recurring payment, every month, every year, or every week.',
+      comingSoon: true,
     },
   ]
 
@@ -56,13 +60,13 @@ export default function NewPayment() {
         <div className="grid grid-flow-col sm:auto-cols-max justify-start sm:justify-end gap-2">
           {/* Search form */}
           <SearchForm />
-          {/* Back button */}
-          <button className="btn bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white">
+          {/* View my payments button */}
+          <Link href="/payments/list" className="btn bg-gray-900 text-gray-100 hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-800 dark:hover:bg-white">
             <svg className="fill-current shrink-0 xs:hidden" width="16" height="16" viewBox="0 0 16 16">
               <path d="M6.6 13.4L5.2 12l4-4-4-4 1.4-1.4L12 8z" />
             </svg>
             <span className="max-xs:sr-only">View my payments</span>
-          </button>
+          </Link>
         </div>
 
       </div>

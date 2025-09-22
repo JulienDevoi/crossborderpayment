@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Logo() {
   return (
-    <Link className="block" href="/start">
+    <Link className="block" href="/payments/new-payment">
       <svg
         className="fill-violet-500"
         xmlns="http://www.w3.org/2000/svg"
